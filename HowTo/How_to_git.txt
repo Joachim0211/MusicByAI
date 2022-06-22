@@ -16,7 +16,7 @@ git status
 # now you can work here on the files
 
 #when finished:
-
+git pull #allways pull before push to main
 git status  # shows whether you have something to commit (changed)
 git add . # add the changes to the commit, don´t forget the .
 git status # now the commit is ready the changed files should be in green
