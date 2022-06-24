@@ -1,0 +1,71 @@
+,index,name,count,cluster
+0,1,death metal,16,0
+1,0,brutal death metal,14,0
+2,5,technical death metal,9,0
+3,6,grim death metal,9,0
+4,9,metal,8,0
+5,4,grindcore,5,0
+6,8,swedish death metal,5,0
+7,3,goregrind,5,0
+8,12,florida death metal,5,0
+9,2,deathgrind,4,0
+10,1,pop,20,1
+11,6,dance pop,16,1
+12,14,post-teen pop,11,1
+13,0,edm,5,1
+14,2,pop dance,5,1
+15,13,electropop,4,1
+16,15,uk pop,4,1
+17,33,pop rap,3,1
+18,22,german pop,3,1
+19,18,urban contemporary,2,1
+20,0,adult standards,8,2
+21,4,rock-and-roll,7,2
+22,3,brill building pop,6,2
+23,5,rockabilly,6,2
+24,2,lounge,5,2
+25,6,classic rock,5,2
+26,8,folk rock,5,2
+27,14,pop,4,2
+28,10,mellow gold,4,2
+29,36,bossa nova,4,2
+30,1,death metal,18,3
+31,0,brutal death metal,14,3
+32,4,metal,13,3
+33,11,technical death metal,8,3
+34,38,florida death metal,5,3
+35,22,black metal,5,3
+36,17,swedish metal,5,3
+37,13,swedish death metal,5,3
+38,29,death 'n' roll,4,3
+39,14,melodic death metal,3,3
+40,2,neo-classical,6,4
+41,1,compositional ambient,5,4
+42,19,classical,4,4
+43,20,late romantic era,3,4
+44,5,ambient,3,4
+45,22,fourth world,2,4
+46,23,j-ambient,2,4
+47,0,piano cover,2,4
+48,27,classify,2,4
+49,28,drift,1,4
+50,28,pop,7,5
+51,27,dance pop,6,5
+52,12,latin,6,5
+53,15,trap latino,6,5
+54,13,reggaeton,6,5
+55,29,post-teen pop,4,5
+56,38,tropical house,4,5
+57,32,edm,4,5
+58,34,pop dance,4,5
+59,18,mellow gold,3,5
+60,7,jazz,9,6
+61,2,bebop,7,6
+62,6,hard bop,7,6
+63,24,neo-classical,7,6
+64,8,jazz fusion,6,6
+65,5,free jazz,5,6
+66,4,contemporary post-bop,4,6
+67,3,big band,3,6
+68,9,jazz saxophone,3,6
+69,11,jazz funk,3,6
