@@ -1,0 +1,31 @@
+,index,name,count,cluster
+0,1,death metal,9,0
+1,0,brutal death metal,8,0
+2,5,technical death metal,6,0
+3,6,grim death metal,5,0
+4,9,metal,5,0
+5,3,death metal,11,1
+6,5,metal,10,1
+7,17,brutal death metal,7,1
+8,18,florida death metal,5,1
+9,6,swedish death metal,5,1
+10,17,classical,8,2
+11,9,jazz,4,2
+12,7,bebop,4,2
+13,10,jazz saxophone,4,2
+14,18,compositional ambient,3,2
+15,12,neo-classical,6,3
+16,5,jazz,5,3
+17,10,jazz fusion,4,3
+18,2,bebop,4,3
+19,3,free jazz,4,3
+20,16,trap latino,5,4
+21,8,latin,5,4
+22,19,reggaeton,4,4
+23,1,quiet storm,3,4
+24,24,mellow gold,3,4
+25,19,dance pop,4,5
+26,2,latin,4,5
+27,3,reggaeton,4,5
+28,20,pop,4,5
+29,5,trap latino,4,5

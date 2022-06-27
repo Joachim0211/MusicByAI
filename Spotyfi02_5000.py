@@ -20,13 +20,15 @@ songs=pd.read_csv(path+'df_audio_features_5000')
 songs.columns=songs.columns.str.strip()
 songs.set_index(["name", "artist"],inplace=True)
 
-
+songs = songs.loc[(songs['loudness']>-45)&(songs['speechiness']<0.6),:]
 songs_slice = songs.loc[:,['danceability', 'energy', 'loudness', 'mode', 'speechiness',
        'acousticness', 'instrumentalness', 'liveness', 'valence', 'time_signature']]
+
 
 #scaler = skl.RobustScaler()
 #scaler = skl.QuantileTransformer()
 scaler = skl.MinMaxScaler(feature_range=(0,1))
+#scaler = skl.StandardScaler()
 scaler.fit(songs_slice)
 songs_scaled = scaler.transform(songs_slice)
  
@@ -34,7 +36,7 @@ songs_scaled_df = pd.DataFrame(songs_scaled,
              index=songs_slice.index,
              columns=songs_slice.columns)
 
-my_kmeans = KMeans(n_clusters= 7, random_state = 1)
+my_kmeans = KMeans(n_clusters= 40, random_state = 1)
 my_kmeans.fit(songs_scaled)
 clusters = my_kmeans.labels_
 inert = my_kmeans.inertia_ 
@@ -54,7 +56,7 @@ songs_by_cluster.plot(subplots=True,marker='.',linestyle='none')
 ax = plt.gca()
 ax.axes.xaxis.set_ticklabels([])
 plt.tight_layout()
-
+    
 
 ###########################################
 
@@ -66,7 +68,7 @@ plt.tight_layout()
 
 ###########################################
 songs_scaled_df["sh_score"] = silhouette_samples(songs_scaled, my_kmeans.labels_)
-songs_scaled_df.to_csv('songs5000_clusters.csv')
+songs_scaled_df.to_csv('songs5000_40clusters.csv')
 
 songs_scaled_df1 = songs_scaled_df.loc[songs_scaled_df["sh_score"] > 0.2,:]
 #songs_scaled_df["sh_score"].hist()
@@ -74,8 +76,8 @@ songs_scaled_df1 = songs_scaled_df.loc[songs_scaled_df["sh_score"] > 0.2,:]
 ################################
 # cl_pos = pd.DataFrame(my_kmeans.cluster_centers_)
 # cl_pos.columns = ['danceability', 'energy', 'loudness', 'mode', 'speechiness',
-#        'acousticness', 'instrumentalness', 'liveness', 'valence', 'time_signature']
-#radar_chart(cl_pos)
+#         'acousticness', 'instrumentalness', 'liveness', 'valence', 'time_signature']
+# radar_chart(cl_pos)
 
 
 #plot each column vs one another

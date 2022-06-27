@@ -16,7 +16,7 @@ songs=pd.read_csv(path+'df_audio_features_5000')
 songs.columns=songs.columns.str.strip()
 songs.set_index(["name", "artist"],inplace=True)
 
-
+songs = songs.loc[(songs['loudness']>-45)&(songs['speechiness']<0.6),:]
 songs_slice = songs.loc[:,['danceability', 'energy', 'loudness', 'mode', 'speechiness',
        'acousticness', 'instrumentalness', 'liveness', 'valence', 'time_signature']]
 
